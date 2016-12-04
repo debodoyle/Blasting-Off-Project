@@ -1,0 +1,195 @@
+
+
+
+/*****************
+Body styles
+ ******************/
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 400px;
+  font-family: 'Open Sans' sans-serif;
+}
+
+/*.container {
+  max-width: 960px;
+}*/
+
+.meta {
+  margin-bottom: 1em;
+  color: #777;
+}
+
+.meta li {
+  border-right: 1px solid #ddd;
+}
+
+.meta li:last-child {
+  border-right: none;
+}
+
+
+/*****************
+Navigation
+ ******************/
+
+.navbar {
+  background-color: rgb(52, 152, 219);
+}
+
+.navbar a {
+  color: rgb(240, 243, 244);
+}
+
+.navbar a:hover {
+  color: rgb(208, 211, 212);
+  /*color: #000;*/
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus
+ {
+  background-color: rgb(46, 134, 193);
+}
+
+
+
+
+
+/*****************
+Lead section
+ ******************/
+
+.well {
+  background-color: rgba(225, 245, 255, 0.6);
+  /*background-color: rgb(232, 234, 246);*/
+  /*background-color: transparent;*/
+}
+
+
+/*****************
+Font
+ ******************/
+
+.lead {
+  color: #555;
+}
+
+.posts h1 a {
+  color: #444;
+}
+
+.posts h1 a:hover {
+  background-color: rgba(242, 243, 244, .7);
+  text-decoration: none;
+}
+
+
+/*****************
+button
+ ******************/
+
+.btn-lg {
+  padding: .75em;
+  margin: 0 .65em;
+}
+
+
+
+/*****************
+Footer
+ ******************/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 105%;
+  /* Set the fixed height of the footer here */
+  height: 240px;
+  background-color: #333;
+  color: #bdbdbd;
+  padding: 25px;
+}
+
+/*****************
+Links
+ ******************/
+
+.footer a {
+  color: #639bcf;
+}
+
+.footer a:hover {
+  color: #d8e6f3;
+}
+
+
+/*****************
+Images
+ ******************/
+
+.blasting-img {
+  border-radius: 2em;
+}
+
+/*****************
+Glyphicon
+ ******************/
+
+
+.features .glyphicon {
+  font-size: 2.285714rem;
+  margin-top: 4rem;
+}
+
+.about .fa-rocket{
+  font-size: 3.5em;
+}
+
+/*****************
+Media Queries
+ ******************/
+
+/* Screens larger than 769px */
+
+ @media screen and (min-width: 769px) {
+   ul .dropdown-menu  a:hover {
+     background-color: rgb(213, 245, 227)
+   }
+ }
+
+
+/* Screens smaller than 768px */
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-bottom: 450px;
+  }
+  .footer {
+    height: 400px;
+  }
+  .btn-lg {
+    /*position: relative;
+    right: 10px;*/
+    margin: 0 0 .75em 0;
+  }
+  .navbar-toggle .icon-bar {
+      background-color: rgb(240, 243, 244);
+  }
+  .dropdown-menu li a {
+    color: rgb(240, 243, 244);
+  }
+  .dropdown-menu li a:hover {
+    background-color: rgb(36, 113, 163);
+    color: rgb(208, 211, 212);
+  }
+}
